@@ -5,8 +5,8 @@ setup(
     version='1.0',
     packages=[''],
     url='https://github.com/Aliforati/Shamsi',
-    license='',
+    license='MIT License',
     author='Alifo',
     author_email='foratialipouya@gmail.com',
-    description='Shamsi Date'
+    description='Shamsi Date Library'
 )
