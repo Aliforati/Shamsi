@@ -3,7 +3,7 @@ Requirements:python 3.6
 
 Install by "" pip install https://github.com/Aliforati/Shamsi/archive/master.zip "" command
 
-Use in script or shell by import 'from Dateandtime import Dateandtime'
+Use in script or shell by 'from Dateandtime import Dateandtime'
 
 You can create Dateandtime objects thats represents shamsi date by Year,Month,Day,(*)Hour,(*)Min,(*)H24 :
 
