@@ -11,7 +11,7 @@ Year:Between 1,9999 in shamsi
 
 Month:Between 1,12 in shamsi
 
-Day: Between 1,31 in Farvardin-Sharivar Months & 1,30 in Mehr-Esfand(Leap years) Months & 1,29 in Esfand(Non-Leap years) Month
+Day: Between 1,31 in Farvardin\~Sharivar Months & 1,30 in Mehr\~Esfand(Leap years) Months & 1,29 in Esfand(Non-Leap years) Month
 
 Hour:Between 00,23 (You can also use 24 as 00)
 
