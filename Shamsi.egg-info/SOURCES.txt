@@ -1,0 +1,6 @@
+Dateandtime.py
+setup.py
+Shamsi.egg-info/PKG-INFO
+Shamsi.egg-info/SOURCES.txt
+Shamsi.egg-info/dependency_links.txt
+Shamsi.egg-info/top_level.txt
