@@ -11,12 +11,18 @@ Min:Between 00,59
 H24:True (for 24-Hours system) & False (for 12-Hours system)
 
 Methods:
+
 __str__():return date and time in persian like چهارشنبه 20 ام آذر ماه سال 1398 ساعت 10 و 08 دقیقه بعد از ظهر
+
 __numberic__():return date in numberic like 1398/09/20 10:08 PM
+
 __h24c__():convert 12-Hours to 24-Hours system or 24-Hours to 12-Hours system
 
+
 Static Methods:
+
 Now():returns current date and time in persian
+
 GTSH():get Years,Month,Day in Gregorian system & convert it to Shamsi & return a Dateandtime object thats include converted date
 
 
