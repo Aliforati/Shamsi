@@ -4,7 +4,7 @@ setup(
     name='Shamsi',
     version='1.0',
     packages=[''],
-    url='',
+    url='https://github.com/Aliforati/Shamsi',
     license='',
     author='Alifo',
     author_email='foratialipouya@gmail.com',
