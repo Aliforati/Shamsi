@@ -42,10 +42,7 @@ class Dateandtime:
                 s-=1
             l=dd
             i+=k+l
-            if yy%4==0 and l+k<80:
-                i-=1
-            if (yy+3)%4==0 and l+k<80:
-                i+=1
+            i=i-1 if (yy%4==0 and l+k<80) else i+1
             i-=226900
             i-=(i//365)//4
             y=i//365
