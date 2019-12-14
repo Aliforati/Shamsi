@@ -46,7 +46,7 @@ class Dateandtime:
                 i-=1
             elif l+k<80:
                 i+=1
-            elif l+k>=80
+            elif l+k>=80 and yy%4==0:
                 i+=1
             i-=226900
             i-=(i//365)//4
@@ -120,3 +120,4 @@ class Dateandtime:
             return Dateandtime(c.Year,c.Month,c.Day,n.hour,n.minute,True)
     except SyntaxError:
         print("خطای ساختاری")
+print(Dateandtime.Now())
