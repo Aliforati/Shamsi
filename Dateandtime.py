@@ -120,4 +120,3 @@ class Dateandtime:
             return Dateandtime(c.Year,c.Month,c.Day,n.hour,n.minute,True)
     except SyntaxError:
         print("خطای ساختاری")
-print(Dateandtime.Now())
