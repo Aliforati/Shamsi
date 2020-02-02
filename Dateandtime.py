@@ -7,7 +7,7 @@ class Dateandtime:
         Hour=None
         Min=None
         H24=None
-        m = {6: "یکشنبه", 0: "دوشنبه", 1: "سه شنبه", 2: "چهارشنبه", 3: "پنجشنبه", 4: "جمعه", 5: "شنبه"}
+        m = {6: "یک شنبه", 0: "دو شنبه", 1: "سه شنبه", 2: "چهارشنبه", 3: "پنج شنبه", 4: "جمعه", 5: "شنبه"}
         mn = {1: "فروردین", 2: "اردیبهشت", 3: "خرداد", 4: "تیر", 5: "مرداد", 6: "شهریور", 7: "مهر", 8: "آبان", 9: "آذر",
               10: "دی", 11: "بهمن", 12: "اسفند"}
         def __init__(self,Year,Month,Day,Hour=None,Min=None,H24=None):
@@ -120,26 +120,29 @@ class Dateandtime:
         def mcal(year,month):
             a=Dateandtime(year,month,1)
             t = list(map(lambda x:x+1,[2, 1, 1, 2, 2, -1, 3]))
-            s=Dateandtime.mn[a.Month]+" "+str(year)+"\n"
-            for i in range(6,-1,-1):
-                d=(i+5)%7
-                s+=Dateandtime.m[d]+(" "*t[d])
+            s="{0:^70}".format("o"+Dateandtime.mn[a.Month]+" "+str(year)+"o")+"\n"
+            s+="o{m[4][0]:o<5}{m[3][0]:o^10}{m[2][0]:o^10}{m[1][0]:o^10}{m[0][0]:o^10}{m[6][0]:o^10}{m[5][0]:o>5}o".format(m=Dateandtime.m)
 
             s+="\n "
             c=1
+            b=[]
             for i in range((a.__dayofweek__()-5)%7):
-                s+=" "*7
-                c+=1;
+               b.append("")
+            s+="\b"*10
             for i in range(1,32):
-                if c==8:
-                    s+="\n "
-                    c=1
-                s+=str(i)+" "*6 if (i/10)<1 else str(i)+" "*5
-                c+=1
+                b.append(i)
                 if i==29 and month==12 and year%4!=3:
                     break
                 if i==30 and month>6:
                     break
+            while b.__len__()<42:
+                b.append("")
+            s+=" {h[6]:<5}{h[5]:^10}{h[4]:^10}{h[3]:^10}{h[2]:^10}{h[1]:^10}{h[0]:>5}\n" \
+               " {h[13]:<5}{h[12]:^10}{h[11]:^10}{h[10]:^10}{h[9]:^10}{h[8]:^10}{h[7]:>5}\n" \
+               " {h[20]:<5}{h[19]:^10}{h[18]:^10}{h[17]:^10}{h[16]:^10}{h[15]:^10}{h[14]:>5}\n" \
+               " {h[27]:<5}{h[26]:^10}{h[25]:^10}{h[24]:^10}{h[23]:^10}{h[22]:^10}{h[21]:>5}\n" \
+               " {h[34]:<5}{h[33]:^10}{h[32]:^10}{h[31]:^10}{h[30]:^10}{h[29]:^10}{h[28]:>5}\n" \
+               " {h[41]:<5}{h[40]:^10}{h[39]:^10}{h[38]:^10}{h[37]:^10}{h[36]:^10}{h[35]:>5}\n".format(h=b)
             return s
         @staticmethod
         def ycal(year):
@@ -149,3 +152,4 @@ class Dateandtime:
             return s
     except SyntaxError:
         print("خطای ساختاری")
+print(Dateandtime.ycal(1398))
