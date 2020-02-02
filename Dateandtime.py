@@ -7,7 +7,9 @@ class Dateandtime:
         Hour=None
         Min=None
         H24=None
-
+        m = {6: "یکشنبه", 0: "دوشنبه", 1: "سه شنبه", 2: "چهارشنبه", 3: "پنجشنبه", 4: "جمعه", 5: "شنبه"}
+        mn = {1: "فروردین", 2: "اردیبهشت", 3: "خرداد", 4: "تیر", 5: "مرداد", 6: "شهریور", 7: "مهر", 8: "آبان", 9: "آذر",
+              10: "دی", 11: "بهمن", 12: "اسفند"}
         def __init__(self,Year,Month,Day,Hour=None,Min=None,H24=None):
             self.Year=Year
             self.Month=Month
@@ -92,13 +94,10 @@ class Dateandtime:
             else:
                 st+=" AM" if ((self.Hour%24)/12)<1 else " PM"
             return st
-        def MonthName(self):
-            m={1:"فروردین",2:"اردیبهشت",3:"خرداد",4:"تیر",5:"مرداد",6:"شهریور",7:"مهر",8:"آبان",9:"آذر",10:"دی",11:"بهمن",12:"اسفند"}
-            return m[self.Month]
         def __numberic__(self):
             return str(self.Year) + "/" + str(self.Month) + "/" + str(self.Day) + " " + self.__h24f__(0) if self.Hour != None else str(self.Year) + "/" + str(self.Month) + "/" + str(self.Day)
         def __str__(self):
-            return self.__dayofweek__()+" "+str(self.Day) + " ام " + self.MonthName() + " ماه سال " + str(self.Year) + " " + self.__h24f__(1) if self.Hour != None else self.__dayofweek__()+" "+str(self.Day) + " ام " + self.MonthName() + " ماه سال " + str(self.Year)
+            return self.m[self.__dayofweek__()]+" "+str(self.Day) + " ام " + self.mn[self.Month] + " ماه سال " + str(self.Year) + " " + self.__h24f__(1) if self.Hour != None else self.m[self.__dayofweek__()]+" "+str(self.Day) + " ام " + self.mn[self.Month] + " ماه سال " + str(self.Year)
         def __h24c__(self):
             if self.H24==True:
                 self.H24=False
@@ -111,13 +110,42 @@ class Dateandtime:
                 y+=30 if z>6 else 31
                 z-=1
             y+=self.Day
-            m={6:"یکشنبه",0:"دوشنبه",1:"سه شنبه",2:"چهارشنبه",3:"پنجشنبه",4:"جمعه",5:"شنبه"}
-            return m[y%7]
+            return y%7
         @staticmethod
         def Now():
             n=datetime.now()
             c=Dateandtime.GTSH(n.year,n.month,n.day)
             return Dateandtime(c.Year,c.Month,c.Day,n.hour,n.minute,True)
+        @staticmethod
+        def mcal(year,month):
+            a=Dateandtime(year,month,1)
+            t = list(map(lambda x:x+1,[2, 1, 1, 2, 2, -1, 3]))
+            s=a.MonthName()+" "+str(year)+"\n"
+            for i in range(6,-1,-1):
+                d=(i+5)%7
+                s+=Dateandtime.m[d]+(" "*t[d])
+
+            s+="\n "
+            c=1
+            for i in range((a.__dayofweek__()-5)%7):
+                s+=" "*7
+                c+=1;
+            for i in range(1,32):
+                if c==8:
+                    s+="\n "
+                    c=1
+                s+=str(i)+" "*6 if (i/10)<1 else str(i)+" "*5
+                c+=1
+                if i==29 and month==12 and year%4!=3:
+                    break
+                if i==30 and month>6:
+                    break
+            return s
+        @staticmethod
+        def ycal(year):
+            s=str(year)+"\n"
+            for i in range(12):
+                s+=Dateandtime.mcal(year,i+1).replace(" "+str(year),"")+"\n\n"
+            return s
     except SyntaxError:
         print("خطای ساختاری")
-print(Dateandtime.Now())
