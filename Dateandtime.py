@@ -120,7 +120,7 @@ class Dateandtime:
         def mcal(year,month):
             a=Dateandtime(year,month,1)
             t = list(map(lambda x:x+1,[2, 1, 1, 2, 2, -1, 3]))
-            s=a.MonthName()+" "+str(year)+"\n"
+            s=Dateandtime.mn[a.Month]+" "+str(year)+"\n"
             for i in range(6,-1,-1):
                 d=(i+5)%7
                 s+=Dateandtime.m[d]+(" "*t[d])
