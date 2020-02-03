@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="60fa4682-ee03-4129-a5c3-b9b8d9e37dbe" name="Default Changelist" comment="Calender fix">
-      <change afterPath="$PROJECT_DIR$/Shamsi.py" afterDir="false" />
+    <list default="true" id="60fa4682-ee03-4129-a5c3-b9b8d9e37dbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GUI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dateandtime.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shamsi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shamsi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +63,19 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alifo\PycharmProjects\Shamsi" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.GUI">
     <configuration name="Dateandtime" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Shamsi" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -83,8 +91,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="GUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Shamsi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GUI" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.GUI" />
         <item itemvalue="Python.Dateandtime" />
         <item itemvalue="Python.Dateandtime" />
         <item itemvalue="Python.Dateandtime" />
@@ -120,7 +151,8 @@
       <workItem from="1576152211627" duration="18000" />
       <workItem from="1576348860799" duration="2555000" />
       <workItem from="1576424882249" duration="36000" />
-      <workItem from="1580657909357" duration="19205000" />
+      <workItem from="1580657909357" duration="27527000" />
+      <workItem from="1580726299952" duration="1398000" />
     </task>
     <task id="LOCAL-00001" summary="Shamsi Date Library">
       <created>1576086285896</created>
@@ -178,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580678083781</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Calender fix">
+      <created>1580680664262</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580680664262</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,14 +266,15 @@
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state x="272" y="42" key="#Deployment/0.0.1360.768@0.0.1360.768" timestamp="1576085138172" />
-    <state x="443" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576087123791">
-      <screen x="0" y="0" width="1360" height="768" />
-    </state>
-    <state x="443" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1360.768@0.0.1360.768" timestamp="1576087123791" />
-    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1580680636863">
+    <state x="417" y="174" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580680758774">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1580680636863" />
+    <state x="417" y="174" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.720@0.0.1280.720" timestamp="1580680758774" />
+    <state x="443" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1360.768@0.0.1360.768" timestamp="1576087123791" />
+    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1580680663816">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1580680663816" />
     <state x="305" y="0" key="CommitChangelistDialog2/0.0.1360.768@0.0.1360.768" timestamp="1576349537354" />
     <state x="92" y="92" width="1176" height="584" key="DiffContextDialog" timestamp="1576086662877">
       <screen x="0" y="0" width="1360" height="768" />
@@ -256,42 +296,42 @@
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state x="468" y="89" key="Github.UntrackedFilesDialog/0.0.1360.768@0.0.1360.768" timestamp="1576085732824" />
-    <state width="1237" height="202" key="GridCell.Tab.0.bottom" timestamp="1580679302134">
+    <state width="1237" height="202" key="GridCell.Tab.0.bottom" timestamp="1580745317849">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="202" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1580679302134" />
+    <state width="1237" height="202" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1580745317849" />
     <state width="1317" height="192" key="GridCell.Tab.0.bottom/0.0.1360.768@0.0.1360.768" timestamp="1576349261778" />
-    <state width="1237" height="202" key="GridCell.Tab.0.center" timestamp="1580679302134">
+    <state width="1237" height="202" key="GridCell.Tab.0.center" timestamp="1580745317849">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="202" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1580679302134" />
+    <state width="1237" height="202" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1580745317849" />
     <state width="1317" height="192" key="GridCell.Tab.0.center/0.0.1360.768@0.0.1360.768" timestamp="1576349261778" />
-    <state width="1237" height="202" key="GridCell.Tab.0.left" timestamp="1580679302134">
+    <state width="1237" height="202" key="GridCell.Tab.0.left" timestamp="1580745317849">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="202" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1580679302134" />
+    <state width="1237" height="202" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1580745317849" />
     <state width="1317" height="192" key="GridCell.Tab.0.left/0.0.1360.768@0.0.1360.768" timestamp="1576349261778" />
-    <state width="1237" height="202" key="GridCell.Tab.0.right" timestamp="1580679302134">
+    <state width="1237" height="202" key="GridCell.Tab.0.right" timestamp="1580745317849">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="202" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1580679302134" />
+    <state width="1237" height="202" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1580745317849" />
     <state width="1317" height="192" key="GridCell.Tab.0.right/0.0.1360.768@0.0.1360.768" timestamp="1576349261778" />
-    <state width="1237" height="220" key="GridCell.Tab.1.bottom" timestamp="1580675045318">
+    <state width="1237" height="220" key="GridCell.Tab.1.bottom" timestamp="1580688989228">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1580675045318" />
-    <state width="1237" height="220" key="GridCell.Tab.1.center" timestamp="1580675045318">
+    <state width="1237" height="220" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1580688989228" />
+    <state width="1237" height="220" key="GridCell.Tab.1.center" timestamp="1580688989228">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1580675045318" />
-    <state width="1237" height="220" key="GridCell.Tab.1.left" timestamp="1580675045318">
+    <state width="1237" height="220" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1580688989228" />
+    <state width="1237" height="220" key="GridCell.Tab.1.left" timestamp="1580688989228">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1580675045318" />
-    <state width="1237" height="220" key="GridCell.Tab.1.right" timestamp="1580675045318">
+    <state width="1237" height="220" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1580688989228" />
+    <state width="1237" height="220" key="GridCell.Tab.1.right" timestamp="1580688989228">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1237" height="220" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1580675045318" />
+    <state width="1237" height="220" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1580688989228" />
     <state x="585" y="152" key="MultipleFileMergeDialog" timestamp="1580666741845">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -304,14 +344,15 @@
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state x="446" y="88" key="VCS.ChangeListViewerDialog/0.0.1360.768@0.0.1360.768" timestamp="1576086463970" />
-    <state x="189" y="140" width="816" height="595" key="Vcs.Push.Dialog.v2" timestamp="1580678098780">
+    <state x="189" y="140" width="816" height="595" key="Vcs.Push.Dialog.v2" timestamp="1580680689620">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="189" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1580678098780" />
+    <state x="189" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1580680689620" />
     <state x="201" y="149" width="816" height="595" key="Vcs.Push.Dialog.v2/0.0.1360.768@0.0.1360.768" timestamp="1576349541914" />
-    <state x="376" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1576424888356">
-      <screen x="0" y="0" width="1360" height="768" />
+    <state x="354" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1580726300425">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
+    <state x="354" y="194" key="com.intellij.ide.util.TipDialog/0.0.1280.720@0.0.1280.720" timestamp="1580726300425" />
     <state x="376" y="207" key="com.intellij.ide.util.TipDialog/0.0.1360.768@0.0.1360.768" timestamp="1576424888356" />
     <state x="460" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580667167213">
       <screen x="0" y="0" width="1280" height="720" />
@@ -336,6 +377,7 @@
     <state x="510" y="174" key="svn.repositoryBrowser/0.0.1360.768@0.0.1360.768" timestamp="1576085558192" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Shamsi$GUI.coverage" NAME="GUI Coverage Results" MODIFIED="1580745317841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Shamsi$Dateandtime.coverage" NAME="Dateandtime Coverage Results" MODIFIED="1580679106854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

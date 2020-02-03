@@ -122,12 +122,11 @@ class Dateandtime:
         s="{0:^70}".format("o"+Dateandtime.mn[a.Month]+" "+str(year)+"o")+"\n"
         s+="o{m[4][0]:o<5}{m[3][0]:o^10}{m[2][0]:o^10}{m[1][0]:o^10}{m[0][0]:o^10}{m[6][0]:o^10}{m[5][0]:o>5}o".format(m=Dateandtime.m)
 
-        s+="\n "
+        s+="\n"
         c=1
         b=[]
         for i in range((a.__dayofweek__()-5)%7):
            b.append("")
-        s+="\b"*10
         for i in range(1,32):
             b.append(i)
             if i==29 and month==12 and year%4!=3:

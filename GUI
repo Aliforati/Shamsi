@@ -1,0 +1,24 @@
+import tkinter as t
+import Shamsi as s
+gui=t.Tk()
+def getcal():
+    month=int(mc.get())
+    year=int(yc.get())
+    cal=s.Dateandtime.mcal(year,month)
+    cal=cal[134::]
+    view.delete(0.0,100.100)
+    view.insert(0.0,cal)
+    mn=t.Label(gui, text="{:^20}".format(yc.get()+" "+s.Dateandtime.mn[int(mc.get())]))
+    mn.grid(row=3, columnspan=3,)
+ml=t.Label(gui,text="ماه").grid(row=0,column=0)
+mc=t.Spinbox(gui,from_=1,to=12,width=5,command=getcal)
+mc.grid(row=1,column=0)
+yl=t.Label(gui,text="سال").grid(row=0,column=2)
+yc=t.Spinbox(gui,from_=1300,to=2000,width=5,command=getcal)
+yc.grid(row=1,column=2)
+wd=t.Label(gui,text="شنبه              یکشنبه                 دوشنبه           سه شنبه          چهار شنبه             پنج شنبه             جمعه").grid(row=4,columnspan=7)
+view=t.Text(gui,width=62,height=10)
+view.grid(row=5,columnspan=3)
+gui.title("تقویم شمسی")
+gui.iconbitmap("icon.ico")
+gui.mainloop()
