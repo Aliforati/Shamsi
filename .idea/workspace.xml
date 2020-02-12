@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="60fa4682-ee03-4129-a5c3-b9b8d9e37dbe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI" beforeDir="false" afterPath="$PROJECT_DIR$/GUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shamsi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shamsi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +186,7 @@
       <workItem from="1581115721543" duration="4507000" />
       <workItem from="1581278244256" duration="12697000" />
       <workItem from="1581295285135" duration="23000" />
+      <workItem from="1581544704284" duration="536000" />
     </task>
     <task id="LOCAL-00001" summary="Shamsi Date Library">
       <created>1576086285896</created>
@@ -259,7 +258,21 @@
       <option name="project" value="LOCAL" />
       <updated>1580745363520</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added Month Calender to Image Function">
+      <created>1581544815556</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581544815556</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added Month Calender to Image Function">
+      <created>1581544887966</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581544887966</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +315,8 @@
     <MESSAGE value="Bug Fixed" />
     <MESSAGE value="Calender fix" />
     <MESSAGE value="GUI Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI Added" />
+    <MESSAGE value="Added Month Calender to Image Function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Month Calender to Image Function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="272" y="42" key="#Deployment" timestamp="1576085138172">
@@ -338,10 +352,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="214" y="263" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.720@0.0.1280.720" timestamp="1581287757002" />
-    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1581544831037">
+    <state x="287" y="0" key="CommitChangelistDialog2" timestamp="1581544887469">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1581544831037" />
+    <state x="287" y="0" key="CommitChangelistDialog2/0.0.1280.720@0.0.1280.720" timestamp="1581544887469" />
     <state x="305" y="0" key="CommitChangelistDialog2/0.0.1360.768@0.0.1360.768" timestamp="1576349537354" />
     <state x="92" y="92" width="1176" height="584" key="DiffContextDialog" timestamp="1576086662877">
       <screen x="0" y="0" width="1360" height="768" />
@@ -413,10 +427,10 @@
       <screen x="0" y="0" width="1360" height="768" />
     </state>
     <state x="446" y="88" key="VCS.ChangeListViewerDialog/0.0.1360.768@0.0.1360.768" timestamp="1576086463970" />
-    <state x="189" y="140" width="816" height="595" key="Vcs.Push.Dialog.v2" timestamp="1580745373490">
+    <state x="189" y="140" width="816" height="595" key="Vcs.Push.Dialog.v2" timestamp="1581544903202">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="189" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1580745373490" />
+    <state x="189" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.720@0.0.1280.720" timestamp="1581544903202" />
     <state x="201" y="149" width="816" height="595" key="Vcs.Push.Dialog.v2/0.0.1360.768@0.0.1360.768" timestamp="1576349541914" />
     <state x="0" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1581544711984">
       <screen x="0" y="0" width="1280" height="720" />
