@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='Shamsi',
-    version='1.1.3',
+    version='1.2.0',
     packages=[''],
     url='https://github.com/Aliforati/Shamsi',
     license='MIT License',
