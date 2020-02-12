@@ -114,7 +114,7 @@ class Dateandtime:
     def Now():
         n=datetime.now()
         c=Dateandtime.GTSH(n.year,n.month,n.day)
-        return Dateandtime(c.Year,c.Month,c.Day,n.hour,n.minute,True)
+        return Dateandtime(c.Year,c.Month,c.Day,n.hour,n.minute,False)
     @staticmethod
     def mcal(year,month):
         a=Dateandtime(year,month,1)
