@@ -33,6 +33,8 @@ class Dateandtime:
     @staticmethod
     def GTSH(yy,mm,dd):
         daysmonth={1:31,2:28,3:31,4:30,5:31,6:30,7:31,8:31,9:30,10:31,11:30,12:31}
+        if (dd==29 and yy%4!=0 and mm==2) or mm>12 or dd>daysmonth[mm] or dd<1:
+            raise SyntaxError("خطای میلادی")
         i=(yy)*365+((yy)//4)
         s=mm-1
         k=0
@@ -44,10 +46,12 @@ class Dateandtime:
         l=dd
         i+=k+l
         if (yy%4==0 and l+k<80):
-            i-=1
+            pass
         elif l+k<80:
-            i+=1
+            i+=2
         elif l+k>=80 and yy%4==0:
+            i+=1
+        else:
             i+=1
         i-=226900
         i-=(i//365)//4
@@ -56,15 +60,22 @@ class Dateandtime:
         b=0
         while(b<12):
             b+=1
-            if i<30:
+            if (i<32 and b<6) or (i<31 and b>=6):
                 break;
-            if b<6:
+            if b<=6:
                 i-=31
             else:
                 i-=30
-        if i==0 and i:
+        if i==0:
             b-=1
-            d=31 if b<6 else 30
+            if b==1 and y%4==0:
+                d=30
+            elif b==0:
+                d=29
+                b=12
+                y-=1
+            else:
+                d=31 if b<=6 else 30
         else:
             d=i
         return Dateandtime(y,b,d)
